@@ -3,7 +3,6 @@ import React from 'react';
 import TeamCard from '../../components/Card/Card.jsx';
 import Consolo0img from '../../../src/assets/img/Consolo0.jpeg';
 import AlanSaavedraImg from '../../../src/assets/img/AlanSaavedra.jpeg';
-import CARR10NImg from '../../../src/assets/img/CARR10N.jpeg';
 import HistoryImg from '../../../src/assets/img/Nuestra Historia.jpeg';
 import MissionImg from '../../../src/assets/img/Nuestra Mision.jpeg';
 import TeamImg from '../../../src/assets/img/Nuestro Equipo.jpeg';
@@ -19,14 +18,6 @@ const AboutUs = () => {
       name: 'Alan Saavedra',
       github_username: 'AlanSaavedra',
       git_profile_url: 'https://github.com/AlanSaavedra',
-    },
-    {
-      img: CARR10NImg,
-      text: 'Estudiante de la Licenciatura Ingeniería en Ciencias de la Computación, generación 2023, \
-            originario de la 4ta región y con interes en máquinas de Turing y hardware de computadoras.',
-      name: 'Alonso Carrion',
-      github_username: 'CARR10N',
-      git_profile_url: 'https://github.com/CARR10N',
     },
     {
       img: Consolo0img,
