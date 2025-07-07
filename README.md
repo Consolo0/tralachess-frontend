@@ -1,8 +1,5 @@
 # Los Tralaleros - Frontend 25-1
 
-## 0. Enlance
-La aplicación está desplegada en el enlance https://tiny-kelpie-88fe0b.netlify.app/
-
 ## 1. Descripción general
 
 ### ¿De qué tratará el proyecto?
