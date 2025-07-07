@@ -1,0 +1,62 @@
+.all-users-container {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1rem 2rem;
+  background-color: #1e1e2f;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.all-users-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+}
+
+.all-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a40;
+}
+
+.all-users-table th,
+.all-users-table td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.all-users-table th {
+  background-color: #33334d;
+  font-weight: bold;
+}
+
+.all-users-table tr:nth-child(even) {
+  background-color: #2f2f4f;
+}
+
+.delete-button {
+  padding: 0.4rem 0.8rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.private-info-warning {
+  color: #ff4d4d;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: bold;
+}

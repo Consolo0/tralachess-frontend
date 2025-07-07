@@ -1,0 +1,10 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  overflow-y: auto;
+  height: calc(8*var(--tile-size));
+  width: calc(3 * var(--tile-size));
+  margin-bottom: 80px;
+}

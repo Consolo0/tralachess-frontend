@@ -1,0 +1,118 @@
+:root {
+  --primary-dark: #0D324D;
+  --primary-light: #D8F2FA;
+  --primary-muted: #CBD7E3;
+  --background-light: #ECECF4;
+  --text-dark: #3C4A5B;
+
+  --accent-green: #2E8B57;
+  --accent-yellow: #FFD166;
+}
+
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: var(--primary-light);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.landing-text {
+  flex: 1;
+  padding-right: 20px;
+  min-width: 280px;
+}
+
+.landing-text h1 {
+  font-size: 3rem;
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+.landing-text p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.landing-button{
+  flex: 1;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: var(--primary-dark);
+  color: white;  
+}
+
+.landing-button:hover {
+  background-color: var(--text-dark);
+}
+
+.chess-icons {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin: 20px;
+}
+
+.landing-image {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.features-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 30px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+}
+
+.features-list li {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .landing-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .landing-text {
+    padding-right: 0;
+  }
+
+  .landing-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .landing-image {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,33 @@
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width: calc(8*var(--tile-size));
+  height: calc(8*var(--tile-size));
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9998;
+}
+
+.win-announce-box{
+  z-index: 9999;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.button-set-up{
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}

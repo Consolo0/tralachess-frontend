@@ -1,0 +1,138 @@
+:root {
+  --primary-dark: #0D324D;
+  --primary-light: #D8F2FA;
+  --primary-muted: #CBD7E3;
+  --background-light: #ECECF4;
+  --text-dark: #3C4A5B;
+  --accent-green: #2E8B57;
+  --accent-red: #8B1E3F;
+  --accent-yellow: #FFD166;
+}
+
+.profile-container {
+  max-width: 500px;
+  margin: 100px auto 0 auto;
+  background: var(--primary-light);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  color: var(--text-dark);
+}
+
+.profile-container h2 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 24px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-dark);
+  background: var(--primary-muted);
+}
+
+.profile-image-label {
+  background: var(--primary-dark);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.profile-image-label:hover {
+  background: var(--accent-green);
+}
+
+.profile-fields label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+.profile-fields input,
+.profile-fields textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--primary-muted);
+  border-radius: 6px;
+  margin-top: 6px;
+  font-size: 1rem;
+  background: white;
+  color: var(--text-dark);
+  resize: none;
+}
+
+.confirm-btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 24px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.profile-save-btn {
+  background: var(--accent-green);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.profile-logout-btn {
+  background: var(--accent-yellow);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.profile-delete-btn {
+  background: var(--accent-red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.profile-save-btn:hover {
+  background: var(--primary-dark);
+}
+
+.profile-logout-btn:hover {
+  background: var(--primary-dark);
+}
+
+.profile-delete-btn:hover {
+  background: var(--primary-dark);
+}

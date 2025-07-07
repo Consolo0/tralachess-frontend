@@ -1,0 +1,15 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background-color: #ececf4;
+  border-radius: 2px;
+}

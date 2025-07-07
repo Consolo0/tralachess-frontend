@@ -1,0 +1,41 @@
+@import "../../constant.css";
+
+.main-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 620px auto 220px; /* columna principal + lateral */
+  grid-template-rows: auto 1fr; /* fila de MatchInfo + contenido principal */
+  grid-template-areas:
+    ". matchinfo ."
+    "deck board control";
+  width: 1897px;
+  min-height: 100vh;
+  background: var(--bg-color);
+  place-content: center;
+}
+
+.cards-deck {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 40px 0 40px;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: rgba(13, 50, 77, 0.5);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(203, 215, 227, 0.15);
+  max-width: 95vw;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

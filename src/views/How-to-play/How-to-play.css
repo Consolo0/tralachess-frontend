@@ -1,0 +1,191 @@
+:root {
+  --primary: #1e3a8a;
+  --accent: #3b82f6;
+  --background: #ececf4;
+  --text-light: #0a0a0a;
+  --highlight: #60a5fa;
+}
+
+.instructions-container {
+  width: 95%;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 95%;
+}
+
+.instructions-section {
+  width: 95%;
+  padding: 80px 20px;
+  background: #f9fafa;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  min-width: 95%;
+  max-width: 95%;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-row.normal {
+  flex-direction: row;
+}
+
+.team-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.team-text {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.button-img {
+  width: 35%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+  margin-left: 7%;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.game-img{
+  width: 45%;
+  height: auto;
+  border-radius: 0px;
+  margin: 10px;
+  margin-right: 1%;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.5);
+}
+.pending-img {
+  width: 20%;
+  height: auto;
+  margin: 10px;
+  margin-left: 15%;
+  border-radius: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+.team-text {
+  text-align: left;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.team-text h2 {
+  color: var(--primary);
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.team-text p {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.team-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.item {
+  margin: 10px;
+  flex-basis: calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .team-row,
+  .team-row.normal,
+  .team-row.reverse,
+  .team-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-text {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .team-text p {
+    font-size: 0.95rem;
+  }
+
+  .item {
+    padding: 5px;
+  }
+}
+
+.grey-text {
+  color: grey;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+button{
+  width: 150px;
+  background-color: #0D324D;
+  color: #ececf4;
+}
+button:disabled {
+  background-color: #3c4a5b;
+  cursor: not-allowed;
+  animation: none;
+  border-color: #3c4a5b;
+}
+
+.fade-out {
+  animation: fadeOut 0.25s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.25s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
